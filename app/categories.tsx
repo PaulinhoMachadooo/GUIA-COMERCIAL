@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, FlatList, Pressable, TextInput, TouchableOpacit
 import { useRouter } from 'expo-router';
 import { Search, X } from 'lucide-react-native';
 import { useState, useMemo } from 'react';
-import { categories } from '../../data';
+import { categories } from '../data';
 import React from 'react';
 
 export default function CategoriesScreen() {

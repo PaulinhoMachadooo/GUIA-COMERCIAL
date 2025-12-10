@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { ArrowLeft } from "lucide-react-native";
+import { ActivityIndicator } from "react-native";
 import { WebView } from "react-native-webview";
 import { categories } from "../data/index";
 import React from "react";
@@ -16,7 +17,7 @@ import React from "react";
 export default function BusinessesScreen() {
   const router = useRouter();
   const { categoryId } = useLocalSearchParams();
-  const [webViewBusiness, setWebViewBusiness] = React.useState(null);
+  const [webViewBusiness, setWebViewBusiness] = React.useState<any>(null);
 
   const category = categories.find((cat) => cat.id === categoryId);
 

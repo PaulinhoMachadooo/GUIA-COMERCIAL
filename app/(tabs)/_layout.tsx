@@ -14,7 +14,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="categories"
+        name="WebViewScreen"
         options={{
           headerShown: false,
           title: "CATEGORIAS",
