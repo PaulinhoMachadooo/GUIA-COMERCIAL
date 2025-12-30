@@ -8,7 +8,7 @@ const WebViewScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <WebView
-        source={{ uri: "https://guiamaisportofeliz.com.br/categorias/" }} // Substitua pelo seu URL
+        source={{ uri: "https://guiacategorias.online/categorias" }} // Substitua pelo seu URL
         style={styles.webview}
       />
     </SafeAreaView>
