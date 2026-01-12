@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { useRef, useState, useEffect } from "react";
-
+import WebViewComida from "../WebViewComida";
 import { carouselImages } from "../../data/index";
 
 
@@ -122,14 +122,14 @@ export default function HomeScreen() {
 
   const navigateToRestaurants = () => {
     router.push({
-      pathname: "/businesses",
+      pathname: "/WebViewComida",
       params: { categoryId: "271" }, // ID for Restaurants category
     });
   };
 
   const navigateToBebida = () => {
     router.push({
-      pathname: "/businesses",
+      pathname: "/WebViewBebida",
       params: { categoryId: "161" }, // ID for Restaurants category
     });
   };
